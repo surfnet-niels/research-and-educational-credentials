@@ -1,31 +1,20 @@
 {
   "credentials": [
-    "id4RE"
+    "entitlements"
   ],
-  "path": "https://github.com/surfnet-niels/research-and-educational-credentials/id4re",
+  "path": "https://github.com/surfnet-niels/research-and-educational-credentials/entitlements",
   "extends":"https://github.com/surfnet-niels/research-and-educational-credentials/research-and-educational-credentials.json",
   "extends#integrity":"sha256-9cLl....RL5",
-  "schema_uri":"https://github.com/surfnet-niels/research-and-educational-credentials/id4re-0.1.json",
+  "schema_uri":"https://github.com/surfnet-niels/research-and-educational-credentials/entitlements-0.1.json",
   "schema_uri#integrity":"sha256-o984vn819a48ui1llkwPmKjZ5t0WRL5ca_xGgX3c1VLmXfh",
   "document": {
-    "name": "id4RE Credential",
-    "description": "A credential providing basic user IDentity for Research and Education",
+    "name": "Entilements Credential",
+    "description": "A credential providing user entitlements for use in Research and Education",
     "display": [
       {
         "lang": "en",
-        "name": "IDentity for Research and Education",
-        "description": "A credential providing basic IDentity for Research and Education",
-        "rendering": {
-          "simple": {
-            "text_color": "#ffffff",
-            "background_color": "#8f0f12"
-          }
-        }
-      },
-      {
-        "lang": "nl-NL",
-        "name": "IDentity for Research and Education",
-        "description": "Een credential met daarin een basis identiteit voor gebruik in Onderwijs en Onderzoek",
+        "name": "Entilements Credential",
+        "description": "A credential providing user entitlements for use in Research and Education",
         "rendering": {
           "simple": {
             "text_color": "#ffffff",
@@ -37,256 +26,17 @@
     "claims": [
        {
         "path": [
-          "schac_home_organization"
+          "eduperson_entitlement"
         ],
         "sd": "allowed",
         "display": [
           {
-            "name": "Organization",
-            "description": "Organization",
+            "name": "Entitlement",
+            "description": "User entitlements",
             "lang": "en"
-          },
-          {
-            "name": "Instelling",
-            "description": "Instelling",
-            "lang": "nl"
           }
         ]
-      },
-      {
-        "path": [
-          "name"
-        ],
-        "sd": "allowed",
-        "display": [
-          {
-            "name": "Name",
-            "description": "Full name",
-            "lang": "en"
-          },
-          {
-            "name": "Naam",
-            "description": "Volledige naam",
-            "lang": "nl"
-          }
-        ]
-      },
-      {
-        "path": [
-          "given_name"
-        ],
-        "sd": "allowed",
-        "display": [
-          {
-            "name": "Given name",
-            "description": "Given name or first name",
-            "lang": "en"
-          },
-          {
-            "name": "Voornaam",
-            "description": "Voornaam",
-            "lang": "nl"
-          }
-        ]
-      },
-      {
-        "path": [
-          "family_name"
-        ],
-        "sd": "allowed",
-        "display": [
-          {
-            "name": "Family name",
-            "description": "Family name or surname",
-            "lang": "en"
-          },
-          {
-            "name": "Achternaam",
-            "description": "Achternaam met tussenvoegsels",
-            "lang": "nl"
-          }
-        ]
-      },
-      {
-        "path": [
-          "email"
-        ],
-        "sd": "allowed",
-        "display": [
-          {
-            "name": "E-mail",
-            "description": "E-mail address",
-            "lang": "en"
-          },
-          {
-            "name": "E-mail",
-            "description": "E-mail adres",
-            "lang": "nl"
-          }
-        ]
-      },
-      {
-        "path": [
-          "eduperson_scoped_affiliation"
-        ],
-        "sd": "allowed",
-        "display": [
-          {
-            "name": "Affiliation (scoped)",
-            "description": "Affiliation scoped to the home organization",
-            "lang": "en"
-          },
-          {
-            "name": "Betrekking (in relatie)",
-            "description": "Betrekking in relatie tot de instelling",
-            "lang": "nl"
-          }
-        ]
-      },
-      {
-        "path": [
-          "is_member"
-        ],
-        "sd": "allowed",
-        "display": [
-          {
-            "name": "Member affiliation",
-            "description": "Member of the issuing organisation",
-            "lang": "en"
-          },
-          {
-            "name": "Lid betrekking (in relatie)",
-            "description": "Lid van de uitgevende organisatie",
-            "lang": "nl"
-          }
-        ]
-      },
-      {
-        "path": [
-          "is_student"
-        ],
-        "sd": "allowed",
-        "display": [
-          {
-            "name": "Student affiliation",
-            "description": "Student at the issuing organisation",
-            "lang": "en"
-          },
-          {
-            "name": "Student betrekking (in relatie)",
-            "description": "Student bij de uitgevende organisatie",
-            "lang": "nl"
-          }
-        ]
-      },
-      {
-        "path": [
-          "is_employee"
-        ],
-        "sd": "allowed",
-        "display": [
-          {
-            "name": "Employee affiliation",
-            "description": "Employee at the issuing organisation",
-            "lang": "en"
-          },
-          {
-            "name": "Medewerker betrekking (in relatie)",
-            "description": "Medewerker van de uitgevende organisatie",
-            "lang": "nl"
-          }
-        ]
-      },
-      {
-        "path": [
-          "is_faculty"
-        ],
-        "sd": "allowed",
-        "display": [
-          {
-            "name": "Faculty affiliation",
-            "description": "Faculty member at the issuing organisation",
-            "lang": "en"
-          },
-          {
-            "name": "Faculteit betrekking (in relatie)",
-            "description": "Faculteitsmedewerker van de uitgevende organisatie",
-            "lang": "nl"
-          }
-        ]
-      },
-      {
-        "path": [
-          "is_staff"
-        ],
-        "sd": "allowed",
-        "display": [
-          {
-            "name": "Staff affiliation",
-            "description": "Staff member at the issuing organisation",
-            "lang": "en"
-          },
-          {
-            "name": "Staf betrekking (in relatie)",
-            "description": "Stafmedewerker van de uitgevende organisatie",
-            "lang": "nl"
-          }
-        ]
-      },
-      {
-        "path": [
-          "is_alum"
-        ],
-        "sd": "allowed",
-        "display": [
-          {
-            "name": "Alumni affiliation",
-            "description": "Alumni of the issuing organisation",
-            "lang": "en"
-          },
-          {
-            "name": "Alumni betrekking (in relatie)",
-            "description": "Alumni van de uitgevende organisatie",
-            "lang": "nl"
-          }
-        ]
-      },
-      {
-        "path": [
-          "is_library-walk-in"
-        ],
-        "sd": "allowed",
-        "display": [
-          {
-            "name": "Library-walk-in affiliation",
-            "description": "A library-walk-in related to the issuing organisation",
-            "lang": "en"
-          },
-          {
-            "name": "Library-walk-in relatie",
-            "description": "Een library-walk-in van de uitgevende organisatie",
-            "lang": "nl"
-          }
-        ]
-      },
-      {
-        "path": [
-          "eduperson_assurance"
-        ],
-        "sd": "never",
-        "display": [
-          {
-            "name": "Assurance",
-            "description": "Assurance level for receiving this credential",
-            "lang": "en"
-          },
-          {
-            "name": "Bevestiging",
-            "description": "Bevestigingsniveau voor het verkrijgen van dit credential",
-            "lang": "nl"
-          }
-        ]
-      }
+       }
     ]
   }
 }
