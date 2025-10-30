@@ -287,6 +287,17 @@
           }
         ]
       }
+    ],
+    "required": [
+      "@context",
+      "id",
+      "type",
+      "issuer",
+      "issuanceDate",
+      "issued",
+      "validFrom",
+      "credentialSubject",
+      "credentialSchema"
     ]
   }
 }

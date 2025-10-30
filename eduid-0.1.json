@@ -39,16 +39,5 @@
         { "$ref": "https://github.com/surfnet-niels/research-and-educational-credentials/id4re-0.1.json" }
       ]
     ]
-  "required": [
-    "@context",
-    "id",
-    "type",
-    "issuer",
-    "issuanceDate",
-    "issued",
-    "validFrom",
-    "credentialSubject",
-    "credentialSchema"
-  ],
   }
 }
