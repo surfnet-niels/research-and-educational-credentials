@@ -1,0 +1,29 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "type":"object",
+  "properties":{
+    "vct":{
+      "type":"string"
+    },
+    "iss":{
+      "type":"string"
+    },
+    "nbf":{
+      "type":"number"
+    },
+    "exp":{
+      "type":"number"
+    },
+    "cnf":{
+      "type":"object"
+    },
+    "status":{
+      "type":"object"
+    },
+   },
+  "required":[
+    "iss",
+    "vct",
+    "cnf"
+  ]
+}
