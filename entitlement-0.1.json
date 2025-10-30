@@ -1,20 +1,20 @@
 {
   "credentials": [
-    "id4re"
+    "id4RE"
   ],
   "path": "https://github.com/surfnet-niels/research-and-educational-credentials/id4re",
   "extends":"https://github.com/surfnet-niels/research-and-educational-credentials/research-and-educational-credentials.json",
   "extends#integrity":"sha256-9cLl....RL5",
   "schema_uri":"https://github.com/surfnet-niels/research-and-educational-credentials/id4re-0.1.json",
-  "schema_uri#integrity":"sha256-o984vn....1VLmXfh",
+  "schema_uri#integrity":"sha256-o984vn819a48ui1llkwPmKjZ5t0WRL5ca_xGgX3c1VLmXfh",
   "document": {
-    "name": "id4re Credential",
-    "description": "A credential providing a basic identity for use in the Research and Education sector",
+    "name": "id4RE Credential",
+    "description": "A credential providing basic user IDentity for Research and Education",
     "display": [
       {
         "lang": "en",
-        "name": "id4re",
-        "description": "A credential providing a basic identity for use in the Research and Education sector",
+        "name": "IDentity for Research and Education",
+        "description": "A credential providing basic IDentity for Research and Education",
         "rendering": {
           "simple": {
             "text_color": "#ffffff",
@@ -24,7 +24,7 @@
       },
       {
         "lang": "nl-NL",
-        "name": "id4re",
+        "name": "IDentity for Research and Education",
         "description": "Een credential met daarin een basis identiteit voor gebruik in Onderwijs en Onderzoek",
         "rendering": {
           "simple": {

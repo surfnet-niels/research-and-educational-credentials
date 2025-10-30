@@ -1,0 +1,54 @@
+{
+  "credentials": [
+    "eduID"
+  ],
+  "path": "https://eduwallet.nl/credentials/eduid",
+  "extends":"https://github.com/surfnet-niels/research-and-educational-credentials/id4re-0.1.json",
+  "extends#integrity":"sha256-9cLl....RL5",
+  "schema_uri":"https://eduwallet.nl/credentials/eduid-0.1.json",
+  "schema_uri#integrity":"sha256-o984vn....1VLmXfh",
+  "document": {
+    "name": "eduID Credential",
+    "description": "A credential providing an eduID identity",
+    "display": [
+      {
+        "lang": "en",
+        "name": "eduID",
+        "description": "A credential providing an eduID identity",
+        "rendering": {
+          "simple": {
+            "text_color": "#ffffff",
+            "background_color": "#8f0f12"
+          }
+        }
+      },
+      {
+        "lang": "nl-NL",
+        "name": "eduID",
+        "description": "Een credential met daarin eduID",
+        "rendering": {
+          "simple": {
+            "text_color": "#ffffff",
+            "background_color": "#8f0f12"
+          }
+        }
+      }
+    ],
+    "claims": [
+      "allOf": [
+        { "$ref": "https://github.com/surfnet-niels/research-and-educational-credentials/id4re-0.1.json" }
+      ]
+    ]
+  "required": [
+    "@context",
+    "id",
+    "type",
+    "issuer",
+    "issuanceDate",
+    "issued",
+    "validFrom",
+    "credentialSubject",
+    "credentialSchema"
+  ],
+  }
+}
